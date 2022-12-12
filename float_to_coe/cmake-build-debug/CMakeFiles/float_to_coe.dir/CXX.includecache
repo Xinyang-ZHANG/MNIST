@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/dell/CLionProjects/float_to_coe/main.cpp
+iostream
+-
+sstream
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+bits/stdc++.h
+-
+

@@ -1,0 +1,3 @@
+C:/Users/dell/CLionProjects/mnist_test/cmake-build-debug/CMakeFiles/mnist_test.dir
+C:/Users/dell/CLionProjects/mnist_test/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/dell/CLionProjects/mnist_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir

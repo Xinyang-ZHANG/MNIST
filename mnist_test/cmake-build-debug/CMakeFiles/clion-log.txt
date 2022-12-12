@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files (x86)/mingw64/bin/mingw32-make.exe" "-DCMAKE_C_COMPILER=C:/Program Files (x86)/mingw64/bin/gcc.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files (x86)/mingw64/bin/g++.exe" -G "CodeBlocks - MinGW Makefiles" C:\Users\dell\CLionProjects\mnist_test
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/dell/CLionProjects/mnist_test/cmake-build-debug
