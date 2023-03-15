@@ -1,2 +1,0 @@
-fcnnb_blkmem.v,verilog,xil_defaultlib,../../../ip/fcnnb_blkmem/sim/fcnnb_blkmem.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
