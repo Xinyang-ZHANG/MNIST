@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar  2 23:19:10 2023
+# Process ID: 27504
+# Current directory: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26992 D:\Alinx\Alinx7010\Self_learning\ov5640_mnist_parallel\ov5640_mnist_parallel.xpr
+# Log file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/vivado.log
+# Journal file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.xpr
+update_compile_order -fileset sources_1
+reset_run fcnnW_blkmem_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/W1.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/W2.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/b1.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/b2.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/batch_normalization.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/fcnn_W.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/fcnn_b.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/five.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/test.coe] -no_script -reset -force -quiet
+remove_files  {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/W1.coe D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/W2.coe D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/b1.coe D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/b2.coe D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/batch_normalization.coe D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/fcnn_W.coe D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/fcnn_b.coe D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/five.coe D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/test.coe}
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+generate_target Simulation [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.srcs/sources_1/ip/fcnnW_blkmem/fcnnW_blkmem.xci]
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.srcs/sources_1/ip/fcnnW_blkmem/fcnnW_blkmem.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.srcs/sources_1/ip/fcnnW_blkmem/fcnnW_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source mnist_process_tb.tcl
+add_wave {{/mnist_process_tb/mnist_process/cmos_pclk}} {{/mnist_process_tb/mnist_process/load_start}} {{/mnist_process_tb/mnist_process/mnist_data_valid}} {{/mnist_process_tb/mnist_process/mnist_data}} {{/mnist_process_tb/mnist_process/number_o}} {{/mnist_process_tb/mnist_process/weights_conv1}} {{/mnist_process_tb/mnist_process/bias_conv1}} {{/mnist_process_tb/mnist_process/weights_conv2}} {{/mnist_process_tb/mnist_process/bias_conv2}} {{/mnist_process_tb/mnist_process/bn}} {{/mnist_process_tb/mnist_process/fcnn_W}} {{/mnist_process_tb/mnist_process/fcnn_b}} {{/mnist_process_tb/mnist_process/W1}} {{/mnist_process_tb/mnist_process/B1}} {{/mnist_process_tb/mnist_process/W2}} {{/mnist_process_tb/mnist_process/B2}} {{/mnist_process_tb/mnist_process/BN}} {{/mnist_process_tb/mnist_process/FCNN_W}} {{/mnist_process_tb/mnist_process/FCNN_b}} {{/mnist_process_tb/mnist_process/weight1_load_addr}} {{/mnist_process_tb/mnist_process/weight2_load_addr}} {{/mnist_process_tb/mnist_process/weight1_load_addr_r}} {{/mnist_process_tb/mnist_process/weight2_load_addr_r}} {{/mnist_process_tb/mnist_process/bias1_load_addr}} {{/mnist_process_tb/mnist_process/bias2_load_addr}} {{/mnist_process_tb/mnist_process/bias1_load_addr_r}} {{/mnist_process_tb/mnist_process/bias2_load_addr_r}} {{/mnist_process_tb/mnist_process/bn_load_addr}} {{/mnist_process_tb/mnist_process/bn_load_addr_r}} {{/mnist_process_tb/mnist_process/fcnnW_load_addr}} {{/mnist_process_tb/mnist_process/fcnnW_load_addr_r}} {{/mnist_process_tb/mnist_process/fcnnW_buffer_addr}} {{/mnist_process_tb/mnist_process/fcnnW_buffer_addr_r}} {{/mnist_process_tb/mnist_process/fcnnW_wr_en}} {{/mnist_process_tb/mnist_process/fcnnb_load_addr}} {{/mnist_process_tb/mnist_process/fcnnb_load_addr_r}} {{/mnist_process_tb/mnist_process/load_fcnn_addr}} {{/mnist_process_tb/mnist_process/select_fcnn_addr}} {{/mnist_process_tb/mnist_process/select_fcnn_addr_r}} {{/mnist_process_tb/mnist_process/BN_step_r}} {{/mnist_process_tb/mnist_process/BN_step_r2}} {{/mnist_process_tb/mnist_process/BN_step}} {{/mnist_process_tb/mnist_process/fcnn_addr}} {{/mnist_process_tb/mnist_process/load_state}} {{/mnist_process_tb/mnist_process/conv1out_data_valid}} {{/mnist_process_tb/mnist_process/conv1out_data}} {{/mnist_process_tb/mnist_process/pool1out_data_valid}} {{/mnist_process_tb/mnist_process/pool1out_data}} {{/mnist_process_tb/mnist_process/conv2out_data_valid}} {{/mnist_process_tb/mnist_process/conv2out_data}} {{/mnist_process_tb/mnist_process/pool2out_data_valid}} {{/mnist_process_tb/mnist_process/pool2out_data}} {{/mnist_process_tb/mnist_process/select_fcnn_data}} {{/mnist_process_tb/mnist_process/classified_data_valid_r}} {{/mnist_process_tb/mnist_process/classified_data_valid}} {{/mnist_process_tb/mnist_process/classified_data}} {{/mnist_process_tb/mnist_process/bn_data_valid}} {{/mnist_process_tb/mnist_process/bn_data}} {{/mnist_process_tb/mnist_process/bn_in_data_cal}} {{/mnist_process_tb/mnist_process/sigmoid_data_valid}} {{/mnist_process_tb/mnist_process/sigmoid_data_valid_r}} {{/mnist_process_tb/mnist_process/sigmoid_data_valid_r2}} {{/mnist_process_tb/mnist_process/sigmoid_data_valid_r3}} {{/mnist_process_tb/mnist_process/sigmoid_data}} {{/mnist_process_tb/mnist_process/sigmoid_data_r}} {{/mnist_process_tb/mnist_process/fcnn_mul}} {{/mnist_process_tb/mnist_process/fcnn_data}} {{/mnist_process_tb/mnist_process/image_data}} {{/mnist_process_tb/mnist_process/image_data_valid}} {{/mnist_process_tb/mnist_process/fcnn_temp}} {{/mnist_process_tb/mnist_process/result_data}} {{/mnist_process_tb/mnist_process/maxdata}} 
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg
+set_property xsim.view {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/mnist_process_tb_behav.wcfg D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/max_pooling_tb_behav.wcfg D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg} [get_filesets sim_1]
+run 40 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+reset_run synth_1
+set_property -dict [list CONFIG.Coe_File {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/fcnn_W.coe}] [get_ips fcnnW_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.srcs/sources_1/ip/fcnnW_blkmem/fcnnW_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all fcnnW_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.srcs/sources_1/ip/fcnnW_blkmem/fcnnW_blkmem.xci] -no_script -sync -force -quiet
+reset_run fcnnW_blkmem_synth_1
+launch_runs -jobs 20 fcnnW_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.srcs/sources_1/ip/fcnnW_blkmem/fcnnW_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 40 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+run 40 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 40 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 40 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 40 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/mnist_process_tb_behav.wcfg}
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_parallel/ov5640_mnist_parallel.srcs/sources_1/bd/system/system.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+close_bd_design [get_bd_designs system]
+close_sim

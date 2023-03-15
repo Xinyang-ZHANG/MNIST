@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="classify_ram_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1676167952">
+  <File Type="PA-TCL" Name="classify_ram.tcl"/>
+  <File Type="REPORTS-TCL" Name="classify_ram_reports.tcl"/>
+  <File Type="RDS-RDS" Name="classify_ram.vds"/>
+  <File Type="RDS-UTIL" Name="classify_ram_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="classify_ram_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="classify_ram.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/classify_ram">
+    <File Path="$PSRCDIR/sources_1/ip/classify_ram/classify_ram.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/ip/classify_ram/classify_ram.xci"/>
+        <Attr Name="ImportTime" Val="1677770160"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/classify_ram.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/ip/classify_ram.xcix"/>
+        <Attr Name="ImportTime" Val="1676168067"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="classify_ram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/classify_ram">
+    <File Path="$PSRCDIR/sources_1/ip/classify_ram/classify_ram.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/ip/classify_ram/classify_ram.xci"/>
+        <Attr Name="ImportTime" Val="1677770160"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/classify_ram.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/ip/classify_ram.xcix"/>
+        <Attr Name="ImportTime" Val="1676168067"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="classify_ram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

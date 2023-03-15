@@ -1,0 +1,1328 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar  7 19:33:57 2023
+# Process ID: 13560
+# Current directory: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28188 D:\Alinx\Alinx7010\Self_learning\ov5640_mnist_serial\ov5640_mnist_serial.xpr
+# Log file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/vivado.log
+# Journal file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg
+source mnist_process_tb.tcl
+run 100 us
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+relaunch_sim
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name conv2_ram -dir d:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {conv2_ram} CONFIG.Write_Width_A {48} CONFIG.Write_Depth_A {64} CONFIG.Read_Width_A {48} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {48} CONFIG.Read_Width_B {48} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Fill_Remaining_Memory_Locations {true}] [get_ips conv2_ram]
+generate_target {instantiation_template} [get_files d:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv2_ram/conv2_ram.xci]
+generate_target all [get_files  d:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv2_ram/conv2_ram.xci]
+catch { config_ip_cache -export [get_ips -all conv2_ram] }
+export_ip_user_files -of_objects [get_files d:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv2_ram/conv2_ram.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv2_ram/conv2_ram.xci]
+launch_runs -jobs 20 conv2_ram_synth_1
+export_simulation -of_objects [get_files d:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv2_ram/conv2_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_B_Clock {0} CONFIG.Port_B_Enable_Rate {0}] [get_ips classify_ram]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/classify_ram/classify_ram.xci]
+catch { config_ip_cache -export [get_ips -all classify_ram] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/classify_ram/classify_ram.xci] -no_script -sync -force -quiet
+reset_run classify_ram_synth_1
+launch_runs -jobs 20 classify_ram_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/classify_ram/classify_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 100 us
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 100 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 100 us
+relaunch_sim
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_ips sigmoid_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all sigmoid_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci] -no_script -sync -force -quiet
+reset_run sigmoid_blkmem_synth_1
+launch_runs -jobs 20 sigmoid_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+relaunch_sim
+run 120 us
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+set_property -dict [list CONFIG.Write_Width_A {24} CONFIG.Read_Width_A {24} CONFIG.Write_Width_B {24} CONFIG.Read_Width_B {24} CONFIG.Enable_B {Always_Enabled}] [get_ips layer1_ram]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/layer1_ram/layer1_ram.xci]
+catch { config_ip_cache -export [get_ips -all layer1_ram] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/layer1_ram/layer1_ram.xci] -no_script -sync -force -quiet
+reset_run layer1_ram_synth_1
+launch_runs -jobs 20 layer1_ram_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/layer1_ram/layer1_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Enable_B {Always_Enabled}] [get_ips layer1_ram]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/layer1_ram/layer1_ram.xci]
+catch { config_ip_cache -export [get_ips -all layer1_ram] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/layer1_ram/layer1_ram.xci] -no_script -sync -force -quiet
+reset_run layer1_ram_synth_1
+launch_runs -jobs 20 layer1_ram_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/layer1_ram/layer1_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips classify_ram]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/classify_ram/classify_ram.xci]
+catch { config_ip_cache -export [get_ips -all classify_ram] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/classify_ram/classify_ram.xci] -no_script -sync -force -quiet
+reset_run classify_ram_synth_1
+launch_runs -jobs 20 classify_ram_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/classify_ram/classify_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips BN_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/BN_blkmem/BN_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all BN_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/BN_blkmem/BN_blkmem.xci] -no_script -sync -force -quiet
+reset_run BN_blkmem_synth_1
+launch_runs -jobs 20 BN_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/BN_blkmem/BN_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips W1_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W1_blkmem/W1_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all W1_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W1_blkmem/W1_blkmem.xci] -no_script -sync -force -quiet
+reset_run W1_blkmem_synth_1
+launch_runs -jobs 20 W1_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W1_blkmem/W1_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips W2_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W2_blkmem/W2_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all W2_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W2_blkmem/W2_blkmem.xci] -no_script -sync -force -quiet
+reset_run W2_blkmem_synth_1
+launch_runs -jobs 20 W2_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W2_blkmem/W2_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips b1_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/b1_blkmem/b1_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all b1_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/b1_blkmem/b1_blkmem.xci] -no_script -sync -force -quiet
+reset_run b1_blkmem_synth_1
+launch_runs -jobs 20 b1_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/b1_blkmem/b1_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips b2_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/b2_blkmem/b2_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all b2_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/b2_blkmem/b2_blkmem.xci] -no_script -sync -force -quiet
+reset_run b2_blkmem_synth_1
+launch_runs -jobs 20 b2_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/b2_blkmem/b2_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips fcnnb_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnb_blkmem/fcnnb_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all fcnnb_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnb_blkmem/fcnnb_blkmem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnb_blkmem/fcnnb_blkmem.xci]
+launch_runs -jobs 20 fcnnb_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnb_blkmem/fcnnb_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips fcnnW_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnW_blkmem/fcnnW_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all fcnnW_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnW_blkmem/fcnnW_blkmem.xci] -no_script -sync -force -quiet
+reset_run fcnnW_blkmem_synth_1
+launch_runs -jobs 20 fcnnW_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnW_blkmem/fcnnW_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Enable_B {Always_Enabled}] [get_ips conv_ram]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv_ram/conv_ram.xci]
+catch { config_ip_cache -export [get_ips -all conv_ram] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv_ram/conv_ram.xci] -no_script -sync -force -quiet
+reset_run conv_ram_synth_1
+launch_runs -jobs 20 conv_ram_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv_ram/conv_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips pooling_ram]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/pooling_ram/pooling_ram.xci]
+catch { config_ip_cache -export [get_ips -all pooling_ram] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/pooling_ram/pooling_ram.xci] -no_script -sync -force -quiet
+reset_run pooling_ram_synth_1
+launch_runs -jobs 20 pooling_ram_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/pooling_ram/pooling_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.C_A_Exponent_Width {16} CONFIG.C_A_Fraction_Width {16} CONFIG.Result_Precision_Type {Single} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Latency {7}] [get_ips fix_float]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci]
+catch { config_ip_cache -export [get_ips -all fix_float] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -no_script -sync -force -quiet
+reset_run fix_float_synth_1
+launch_runs -jobs 20 fix_float_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.C_Result_Exponent_Width {16} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Latency {7}] [get_ips float_fix]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci]
+catch { config_ip_cache -export [get_ips -all float_fix] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -no_script -sync -force -quiet
+reset_run float_fix_synth_1
+launch_runs -jobs 20 float_fix_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips conv2_ram]
+generate_target all [get_files  d:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv2_ram/conv2_ram.xci]
+catch { config_ip_cache -export [get_ips -all conv2_ram] }
+export_ip_user_files -of_objects [get_files d:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv2_ram/conv2_ram.xci] -no_script -sync -force -quiet
+reset_run conv2_ram_synth_1
+launch_runs -jobs 20 conv2_ram_synth_1
+export_simulation -of_objects [get_files d:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/conv2_ram/conv2_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Enable_B {Always_Enabled}] [get_ips fcnnW_buffer]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnW_buffer/fcnnW_buffer.xci]
+catch { config_ip_cache -export [get_ips -all fcnnW_buffer] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnW_buffer/fcnnW_buffer.xci] -no_script -sync -force -quiet
+reset_run fcnnW_buffer_synth_1
+launch_runs -jobs 20 fcnnW_buffer_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fcnnW_buffer/fcnnW_buffer.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+set_property -dict [list CONFIG.Write_Width_A {48} CONFIG.Read_Width_A {48} CONFIG.Write_Width_B {48} CONFIG.Read_Width_B {48}] [get_ips sigmoid_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all sigmoid_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci] -no_script -sync -force -quiet
+reset_run sigmoid_blkmem_synth_1
+launch_runs -jobs 20 sigmoid_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_ips sigmoid_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all sigmoid_blkmem] }
+catch { [ delete_ip_run [get_ips -all sigmoid_blkmem] ] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci]
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Enable_B {Always_Enabled}] [get_ips input_ram]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/input_ram/input_ram.xci]
+catch { config_ip_cache -export [get_ips -all input_ram] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/input_ram/input_ram.xci] -no_script -sync -force -quiet
+reset_run input_ram_synth_1
+launch_runs -jobs 20 input_ram_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/input_ram/input_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+set_property -dict [list CONFIG.C_A_Exponent_Width {24} CONFIG.C_A_Fraction_Width {8} CONFIG.Result_Precision_Type {Single} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {7} CONFIG.C_Rate {1}] [get_ips fix_float]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci]
+catch { config_ip_cache -export [get_ips -all fix_float] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -no_script -sync -force -quiet
+reset_run fix_float_synth_1
+launch_runs -jobs 20 fix_float_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.C_Result_Exponent_Width {24} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_Latency {7}] [get_ips float_fix]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci]
+catch { config_ip_cache -export [get_ips -all float_fix] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -no_script -sync -force -quiet
+reset_run float_fix_synth_1
+launch_runs -jobs 20 float_fix_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.c_s2mm_linebuffer_depth {2048}] [get_bd_cells axi_vdma_1]
+endgroup
+save_bd_design
+validate_bd_design
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_axi_vdma_1_0] }
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all system_rst_processing_system7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all system_rst_processing_system7_0_150M_0] }
+catch { config_ip_cache -export [get_ips -all system_v_axi4s_vid_out_0_0] }
+catch { config_ip_cache -export [get_ips -all system_v_tc_0_0] }
+catch { config_ip_cache -export [get_ips -all system_xbar_1] }
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 20 {system_rst_processing_system7_0_150M_0_synth_1 system_v_axi4s_vid_out_0_0_synth_1 system_processing_system7_0_0_synth_1 system_rst_processing_system7_0_100M_0_synth_1 system_axi_vdma_1_0_synth_1 system_v_tc_0_0_synth_1 system_xbar_1_synth_1 system_xbar_0_synth_1 system_auto_pc_1_synth_1 system_auto_pc_0_synth_1}
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+close_bd_design [get_bd_designs system]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+refresh_design
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd}
+startgroup
+endgroup
+validate_bd_design -force
+save_bd_design
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+refresh_design
+report_utilization -name utilization_1
+close_design
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd}
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.c_s2mm_linebuffer_depth {4096}] [get_bd_cells axi_vdma_1]
+endgroup
+save_bd_design
+validate_bd_design
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_axi_vdma_1_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 20 system_axi_vdma_1_0_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_bd_design [get_bd_designs system]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+relaunch_sim
+run 120 us
+update_compile_order -fileset sources_1
+relaunch_sim
+run 120 us
+reset_run BN_blkmem_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+refresh_design
+report_utilization -name utilization_1
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+set_property -dict [list CONFIG.Write_Depth_A {720}] [get_ips layer1_ram]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/layer1_ram/layer1_ram.xci]
+catch { config_ip_cache -export [get_ips -all layer1_ram] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/layer1_ram/layer1_ram.xci] -no_script -sync -force -quiet
+reset_run layer1_ram_synth_1
+launch_runs -jobs 20 layer1_ram_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/layer1_ram/layer1_ram.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+update_compile_order -fileset sources_1
+run 120 us
+update_compile_order -fileset sources_1
+relaunch_sim
+set_property -dict [list CONFIG.Coe_File {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/batch_normalization.coe}] [get_ips BN_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/BN_blkmem/BN_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all BN_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/BN_blkmem/BN_blkmem.xci] -no_script -sync -force -quiet
+reset_run BN_blkmem_synth_1
+launch_runs -jobs 20 BN_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/BN_blkmem/BN_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+refresh_design
+report_utilization -name utilization_1
+set_property -dict [list CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_Latency {7}] [get_ips fix_float]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci]
+catch { config_ip_cache -export [get_ips -all fix_float] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -no_script -sync -force -quiet
+reset_run fix_float_synth_1
+launch_runs -jobs 20 fix_float_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_Latency {7}] [get_ips fix_float]
+set_property -dict [list CONFIG.A_Precision_Type {Custom} CONFIG.C_A_Fraction_Width {8} CONFIG.C_A_Exponent_Width {8} CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {13} CONFIG.C_Rate {1}] [get_ips float_div]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci]
+catch { config_ip_cache -export [get_ips -all float_div] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci]
+launch_runs -jobs 20 float_div_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.A_Precision_Type {Custom} CONFIG.C_A_Fraction_Width {8} CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {24} CONFIG.C_A_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {7} CONFIG.C_Rate {1}] [get_ips float_fix]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci]
+catch { config_ip_cache -export [get_ips -all float_fix] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -no_script -sync -force -quiet
+reset_run float_fix_synth_1
+launch_runs -jobs 20 float_fix_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/W2.coe}] [get_ips W2_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W2_blkmem/W2_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all W2_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W2_blkmem/W2_blkmem.xci] -no_script -sync -force -quiet
+reset_run W2_blkmem_synth_1
+launch_runs -jobs 20 W2_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W2_blkmem/W2_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+set_property -dict [list CONFIG.Result_Precision_Type {Single} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Latency {7}] [get_ips fix_float]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci]
+catch { config_ip_cache -export [get_ips -all fix_float] }
+catch { [ delete_ip_run [get_ips -all fix_float] ] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci]
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.A_Precision_Type {Single} CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {24} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_A_Exponent_Width {8} CONFIG.C_A_Fraction_Width {24} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {7} CONFIG.C_Rate {1}] [get_ips float_fix]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci]
+catch { config_ip_cache -export [get_ips -all float_fix] }
+catch { [ delete_ip_run [get_ips -all float_fix] ] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci]
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.A_Precision_Type {Single} CONFIG.C_A_Exponent_Width {8} CONFIG.C_A_Fraction_Width {24} CONFIG.Result_Precision_Type {Single} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {29} CONFIG.C_Rate {1}] [get_ips float_div]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci]
+catch { config_ip_cache -export [get_ips -all float_div] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci] -no_script -sync -force -quiet
+reset_run float_div_synth_1
+launch_runs -jobs 20 float_div_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+set_property -dict [list CONFIG.Coe_File {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/W1.coe}] [get_ips W1_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W1_blkmem/W1_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all W1_blkmem] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W1_blkmem/W1_blkmem.xci] -no_script -sync -force -quiet
+reset_run W1_blkmem_synth_1
+launch_runs -jobs 20 W1_blkmem_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/W1_blkmem/W1_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/W2.coe}] [get_ips W2_blkmem]
+relaunch_sim
+run 120 us
+set_property -dict [list CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_Latency {7}] [get_ips fix_float]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci]
+catch { config_ip_cache -export [get_ips -all fix_float] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci]
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.A_Precision_Type {Custom} CONFIG.C_A_Fraction_Width {8} CONFIG.C_A_Exponent_Width {8} CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {13} CONFIG.C_Rate {1}] [get_ips float_div]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci]
+catch { config_ip_cache -export [get_ips -all float_div] }
+catch { [ delete_ip_run [get_ips -all float_div] ] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci]
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.A_Precision_Type {Custom} CONFIG.C_A_Fraction_Width {8} CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {24} CONFIG.C_A_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {7} CONFIG.C_Rate {1}] [get_ips float_fix]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci]
+catch { config_ip_cache -export [get_ips -all float_fix] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci]
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+refresh_design
+report_utilization -name utilization_1
+close_design
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+relaunch_sim
+run 120 us
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+set_property -dict [list CONFIG.C_Result_Exponent_Width {7} CONFIG.C_Result_Fraction_Width {4} CONFIG.C_Latency {7}] [get_ips fix_float]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci]
+catch { config_ip_cache -export [get_ips -all fix_float] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci]
+launch_runs -jobs 20 fix_float_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/fix_float/fix_float.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.C_A_Exponent_Width {7} CONFIG.C_A_Fraction_Width {4} CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {7} CONFIG.C_Result_Fraction_Width {4} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {9} CONFIG.C_Rate {1}] [get_ips float_div]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci]
+catch { config_ip_cache -export [get_ips -all float_div] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci]
+launch_runs -jobs 20 float_div_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_div/float_div.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.C_A_Exponent_Width {7} CONFIG.C_A_Fraction_Width {4} CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {24} CONFIG.C_Result_Fraction_Width {8} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {7} CONFIG.C_Rate {1}] [get_ips float_fix]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci]
+catch { config_ip_cache -export [get_ips -all float_fix] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci]
+launch_runs -jobs 20 float_fix_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/float_fix/float_fix.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.STRATEGY {1}] [get_bd_cells axi_mem_intercon]
+endgroup
+startgroup
+set_property -dict [list CONFIG.STRATEGY {1}] [get_bd_cells processing_system7_0_axi_periph]
+endgroup
+validate_bd_design
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_xbar_1] }
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 20 {system_xbar_1_synth_1 system_xbar_0_synth_1 system_auto_pc_0_synth_1}
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.c_m_axi_s2mm_data_width {32}] [get_bd_cells axi_vdma_1]
+endgroup
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.c_m_axi_mm2s_data_width {32} CONFIG.c_mm2s_max_burst_length {16}] [get_bd_cells axi_vdma_0]
+endgroup
+validate_bd_design
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_axi_vdma_0_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_vdma_1_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_us_1] }
+catch { config_ip_cache -export [get_ips -all system_auto_us_0] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 20 {system_axi_vdma_0_0_synth_1 system_axi_vdma_1_0_synth_1 system_auto_us_1_synth_1 system_auto_us_0_synth_1}
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.c_m_axi_s2mm_data_width {64}] [get_bd_cells axi_vdma_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.c_m_axi_mm2s_data_width {64} CONFIG.c_mm2s_max_burst_length {8}] [get_bd_cells axi_vdma_0]
+endgroup
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.S00_HAS_REGSLICE {3} CONFIG.S01_HAS_REGSLICE {3}] [get_bd_cells axi_mem_intercon]
+endgroup
+startgroup
+set_property -dict [list CONFIG.S00_HAS_REGSLICE {3}] [get_bd_cells processing_system7_0_axi_periph]
+endgroup
+validate_bd_design
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_axi_vdma_0_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_vdma_1_0] }
+catch { [ delete_ip_run [get_ips -all system_axi_vdma_1_0] ] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 20 system_axi_vdma_0_0_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Enable_B {Always_Enabled}] [get_ips mnist_image_blkmem]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/mnist_image_blkmem/mnist_image_blkmem.xci]
+catch { config_ip_cache -export [get_ips -all mnist_image_blkmem] }
+catch { [ delete_ip_run [get_ips -all mnist_image_blkmem] ] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/mnist_image_blkmem/mnist_image_blkmem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/mnist_image_blkmem/mnist_image_blkmem.xci]
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/mnist_image_blkmem/mnist_image_blkmem.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+close_bd_design [get_bd_designs system]
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+close_design
+relaunch_sim
+run 120 us
+reset_run synth_1
+relaunch_sim
+run 120 us
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+close_bd_design [get_bd_designs system]
+close_design
+add_files -norecurse -scan_for_includes D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/one.coe
+import_files -norecurse D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/one.coe
+set_property -dict [list CONFIG.Coe_File {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/one.coe}] [get_ips test_imgrom]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/test_imgrom/test_imgrom.xci]
+catch { config_ip_cache -export [get_ips -all test_imgrom] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/test_imgrom/test_imgrom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/test_imgrom/test_imgrom.xci]
+launch_runs -jobs 20 test_imgrom_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/test_imgrom/test_imgrom.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+set_property -dict [list CONFIG.Coe_File {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/one.coe}] [get_ips test_imgrom]
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/test_imgrom/test_imgrom.xci]
+catch { config_ip_cache -export [get_ips -all test_imgrom] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/test_imgrom/test_imgrom.xci] -no_script -sync -force -quiet
+reset_run test_imgrom_synth_1
+launch_runs -jobs 20 test_imgrom_synth_1
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/ip/test_imgrom/test_imgrom.xci] -directory D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 120 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list cmos1_pclk_IBUF_BUFG ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {mnist_process/mnist_data[0]} {mnist_process/mnist_data[1]} {mnist_process/mnist_data[2]} {mnist_process/mnist_data[3]} {mnist_process/mnist_data[4]} {mnist_process/mnist_data[5]} {mnist_process/mnist_data[6]} {mnist_process/mnist_data[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {mnist_process/load_state[0]} {mnist_process/load_state[1]} {mnist_process/load_state[2]} {mnist_process/load_state[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {mnist_process/number_o[0]} {mnist_process/number_o[1]} {mnist_process/number_o[2]} {mnist_process/number_o[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list mnist_process/mnist_data_valid ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+report_utilization -name utilization_1
+close_design
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list cmos1_pclk_IBUF_BUFG ]]
+set_property port_width 4 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {mnist_process/number_o[0]} {mnist_process/number_o[1]} {mnist_process/number_o[2]} {mnist_process/number_o[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {mnist_process/load_state[0]} {mnist_process/load_state[1]} {mnist_process/load_state[2]} {mnist_process/load_state[3]} ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq4'h1 [get_hw_probes mnist_process/load_state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+close_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq4'hX [get_hw_probes mnist_process/load_state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq4'hB [get_hw_probes mnist_process/load_state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq4'hC [get_hw_probes mnist_process/load_state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq4'h1 [get_hw_probes mnist_process/load_state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list cmos1_pclk_IBUF_BUFG ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {mnist_process/mnist_data[0]} {mnist_process/mnist_data[1]} {mnist_process/mnist_data[2]} {mnist_process/mnist_data[3]} {mnist_process/mnist_data[4]} {mnist_process/mnist_data[5]} {mnist_process/mnist_data[6]} {mnist_process/mnist_data[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list mnist_process/mnist_data_valid ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes mnist_process/mnist_data_valid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.srcs/sources_1/bd/system/system.bd]
+refresh_design
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list cmos1_pclk_IBUF_BUFG ]]
+set_property port_width 4 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {mnist_process/number_o[0]} {mnist_process/number_o[1]} {mnist_process/number_o[2]} {mnist_process/number_o[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {mnist_process/load_state[0]} {mnist_process/load_state[1]} {mnist_process/load_state[2]} {mnist_process/load_state[3]} ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+close_design
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/mnist_process_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+run 120 us
+run 120 us
+relaunch_sim
+run 400 us
+relaunch_sim
+run 400 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20 -scripts_only
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20 -scripts_only
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list cmos1_pclk_IBUF_BUFG ]]
+set_property port_width 4 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {mnist_process/number_o[0]} {mnist_process/number_o[1]} {mnist_process/number_o[2]} {mnist_process/number_o[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list mnist_process/number_val ]]
+save_constraints
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE eq4'hX [get_hw_probes mnist_process/load_state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes mnist_process/number_val -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+report_ip_status -name ip_status 
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list cmos1_pclk_IBUF_BUFG ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {mnist_process/mnist_data[0]} {mnist_process/mnist_data[1]} {mnist_process/mnist_data[2]} {mnist_process/mnist_data[3]} {mnist_process/mnist_data[4]} {mnist_process/mnist_data[5]} {mnist_process/mnist_data[6]} {mnist_process/mnist_data[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list mnist_process/mnist_data_valid ]]
+save_constraints
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+file copy -force D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.sysdef D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.sdk/system_wrapper.hdf
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {mnist_process/mnist_data} {mnist_process/mnist_data_valid} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]

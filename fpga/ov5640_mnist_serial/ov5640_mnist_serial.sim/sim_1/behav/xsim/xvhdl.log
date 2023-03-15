@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ip/float_fix/sim/float_fix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity float_fix
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ip/float_div/sim/float_div.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity float_div
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.ip_user_files/ip/fix_float/sim/fix_float.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fix_float
