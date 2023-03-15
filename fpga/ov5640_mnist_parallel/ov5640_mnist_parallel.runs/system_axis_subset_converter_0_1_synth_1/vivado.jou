@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Dec 28 22:01:29 2022
+# Process ID: 23876
+# Current directory: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/ov5640_mnist.runs/system_axis_subset_converter_0_1_synth_1
+# Command line: vivado.exe -log system_axis_subset_converter_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axis_subset_converter_0_1.tcl
+# Log file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/ov5640_mnist.runs/system_axis_subset_converter_0_1_synth_1/system_axis_subset_converter_0_1.vds
+# Journal file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist/ov5640_mnist.runs/system_axis_subset_converter_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_axis_subset_converter_0_1.tcl -notrace

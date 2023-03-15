@@ -1,0 +1,2 @@
+fcnnW_buffer.v,verilog,xil_defaultlib,../../../ip/fcnnW_buffer/sim/fcnnW_buffer.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

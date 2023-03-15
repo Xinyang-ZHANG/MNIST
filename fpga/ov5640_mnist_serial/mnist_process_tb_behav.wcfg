@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mnist_process_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mnist_process_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="69500000000fs"></ZoomStartTime>
+      <ZoomEndTime time="135300000001fs"></ZoomEndTime>
+      <Cursor1Time time="99500000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="215"></NameColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="99" />
+   <wvobject fp_name="/mnist_process_tb/cmos_pclk" type="logic">
+      <obj_property name="ElementShortName">cmos_pclk</obj_property>
+      <obj_property name="ObjectShortName">cmos_pclk</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/cnt_gap" type="array">
+      <obj_property name="ElementShortName">cnt_gap[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_gap[10:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_o_en" type="logic">
+      <obj_property name="ElementShortName">mnist_o_en</obj_property>
+      <obj_property name="ObjectShortName">mnist_o_en</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_o_en_r" type="logic">
+      <obj_property name="ElementShortName">mnist_o_en_r</obj_property>
+      <obj_property name="ObjectShortName">mnist_o_en_r</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_addr_o" type="array">
+      <obj_property name="ElementShortName">mnist_addr_o[10:0]</obj_property>
+      <obj_property name="ObjectShortName">mnist_addr_o[10:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_data_o" type="array">
+      <obj_property name="ElementShortName">mnist_data_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mnist_data_o[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/load_start" type="logic">
+      <obj_property name="ElementShortName">load_start</obj_property>
+      <obj_property name="ObjectShortName">load_start</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/cmos_pclk" type="logic">
+      <obj_property name="ElementShortName">cmos_pclk</obj_property>
+      <obj_property name="ObjectShortName">cmos_pclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/load_start" type="logic">
+      <obj_property name="ElementShortName">load_start</obj_property>
+      <obj_property name="ObjectShortName">load_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/mnist_data_valid" type="logic">
+      <obj_property name="ElementShortName">mnist_data_valid</obj_property>
+      <obj_property name="ObjectShortName">mnist_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/mnist_data" type="array">
+      <obj_property name="ElementShortName">mnist_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mnist_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/bn" type="array">
+      <obj_property name="ElementShortName">bn[63:0]</obj_property>
+      <obj_property name="ObjectShortName">bn[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_W" type="array">
+      <obj_property name="ElementShortName">fcnn_W[9:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnn_W[9:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_b" type="array">
+      <obj_property name="ElementShortName">fcnn_b[319:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnn_b[319:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/weights_conv" type="array">
+      <obj_property name="ElementShortName">weights_conv[799:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_conv[799:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/W1" type="array">
+      <obj_property name="ElementShortName">W1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/B1" type="array">
+      <obj_property name="ElementShortName">B1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B1[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/W2" type="array">
+      <obj_property name="ElementShortName">W2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/B2" type="array">
+      <obj_property name="ElementShortName">B2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/BN" type="array">
+      <obj_property name="ElementShortName">BN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BN[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/FCNN_W" type="array">
+      <obj_property name="ElementShortName">FCNN_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FCNN_W[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/FCNN_b" type="array">
+      <obj_property name="ElementShortName">FCNN_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FCNN_b[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/weight_load_addr" type="array">
+      <obj_property name="ElementShortName">weight_load_addr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_load_addr[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/weight_load_addr_r" type="array">
+      <obj_property name="ElementShortName">weight_load_addr_r[10:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_load_addr_r[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/bn_load_addr" type="array">
+      <obj_property name="ElementShortName">bn_load_addr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bn_load_addr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/bn_load_addr_r" type="array">
+      <obj_property name="ElementShortName">bn_load_addr_r[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bn_load_addr_r[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnnW_load_addr" type="array">
+      <obj_property name="ElementShortName">fcnnW_load_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnnW_load_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnnW_load_addr_r" type="array">
+      <obj_property name="ElementShortName">fcnnW_load_addr_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnnW_load_addr_r[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnnW_buffer_addr" type="array">
+      <obj_property name="ElementShortName">fcnnW_buffer_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnnW_buffer_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnnW_buffer_addr_r" type="array">
+      <obj_property name="ElementShortName">fcnnW_buffer_addr_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnnW_buffer_addr_r[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnnb_load_addr" type="array">
+      <obj_property name="ElementShortName">fcnnb_load_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnnb_load_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnnb_load_addr_r" type="array">
+      <obj_property name="ElementShortName">fcnnb_load_addr_r[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnnb_load_addr_r[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/load_state" type="array">
+      <obj_property name="ElementShortName">load_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">load_state[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/img_load_addr" type="array">
+      <obj_property name="ElementShortName">img_load_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">img_load_addr[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/img_out_addr" type="array">
+      <obj_property name="ElementShortName">img_out_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">img_out_addr[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/img_out_valid" type="logic">
+      <obj_property name="ElementShortName">img_out_valid</obj_property>
+      <obj_property name="ObjectShortName">img_out_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/image_data" type="array">
+      <obj_property name="ElementShortName">image_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">image_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/img_out_valid_r" type="logic">
+      <obj_property name="ElementShortName">img_out_valid_r</obj_property>
+      <obj_property name="ObjectShortName">img_out_valid_r</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/convout_data_valid" type="logic">
+      <obj_property name="ElementShortName">convout_data_valid</obj_property>
+      <obj_property name="ObjectShortName">convout_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/convout_data" type="array">
+      <obj_property name="ElementShortName">convout_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">convout_data[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/pooling1_out_valid" type="logic">
+      <obj_property name="ElementShortName">pooling1_out_valid</obj_property>
+      <obj_property name="ObjectShortName">pooling1_out_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/pooling1_out_ccnt" type="array">
+      <obj_property name="ElementShortName">pooling1_out_ccnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pooling1_out_ccnt[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/pooling1_out_addr" type="array">
+      <obj_property name="ElementShortName">pooling1_out_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pooling1_out_addr[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/layer1_out_data" type="array">
+      <obj_property name="ElementShortName">layer1_out_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">layer1_out_data[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/convlayer/conv_in_data" type="array">
+      <obj_property name="ElementShortName">conv_in_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_in_data[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/convlayer/conv_in_data_valid" type="logic">
+      <obj_property name="ElementShortName">conv_in_data_valid</obj_property>
+      <obj_property name="ObjectShortName">conv_in_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/convout_data_valid" type="logic">
+      <obj_property name="ElementShortName">convout_data_valid</obj_property>
+      <obj_property name="ObjectShortName">convout_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/convout_data" type="array">
+      <obj_property name="ElementShortName">convout_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">convout_data[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_out_valid" type="logic">
+      <obj_property name="ElementShortName">conv2_out_valid</obj_property>
+      <obj_property name="ObjectShortName">conv2_out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_out_valid_r2" type="logic">
+      <obj_property name="ElementShortName">conv2_out_valid_r2</obj_property>
+      <obj_property name="ObjectShortName">conv2_out_valid_r2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_inout_addr" type="array">
+      <obj_property name="ElementShortName">conv2_inout_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_inout_addr[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_inout_addr_r" type="array">
+      <obj_property name="ElementShortName">conv2_inout_addr_r[5:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_inout_addr_r[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_cdata" type="array">
+      <obj_property name="ElementShortName">conv2_cdata[4:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_cdata[4:0][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_cdata[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_cdata[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_cdata[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_cdata[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_cdata[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/conv2_data" type="array">
+      <obj_property name="ElementShortName">conv2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/weight_load_addr" type="array">
+      <obj_property name="ElementShortName">weight_load_addr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_load_addr[10:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/weight_load_addr_r" type="array">
+      <obj_property name="ElementShortName">weight_load_addr_r[10:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_load_addr_r[10:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/conv_cnt" type="array">
+      <obj_property name="ElementShortName">conv_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_cnt[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/conv_cnt_r" type="array">
+      <obj_property name="ElementShortName">conv_cnt_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_cnt_r[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/ci_cnt" type="array">
+      <obj_property name="ElementShortName">ci_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ci_cnt[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/co_cnt" type="array">
+      <obj_property name="ElementShortName">co_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">co_cnt[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/bias_en" type="logic">
+      <obj_property name="ElementShortName">bias_en</obj_property>
+      <obj_property name="ObjectShortName">bias_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/pooling_ccnt" type="array">
+      <obj_property name="ElementShortName">pooling_ccnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pooling_ccnt[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/poolout_data_valid" type="logic">
+      <obj_property name="ElementShortName">poolout_data_valid</obj_property>
+      <obj_property name="ObjectShortName">poolout_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/classify_ram_addr" type="array">
+      <obj_property name="ElementShortName">classify_ram_addr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">classify_ram_addr[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/poolout_data" type="array">
+      <obj_property name="ElementShortName">poolout_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">poolout_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/poolout_data_valid_r" type="logic">
+      <obj_property name="ElementShortName">poolout_data_valid_r</obj_property>
+      <obj_property name="ObjectShortName">poolout_data_valid_r</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/poolout_data_r" type="array">
+      <obj_property name="ElementShortName">poolout_data_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">poolout_data_r[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/classified_data_valid_r" type="logic">
+      <obj_property name="ElementShortName">classified_data_valid_r</obj_property>
+      <obj_property name="ObjectShortName">classified_data_valid_r</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/classified_data_valid" type="logic">
+      <obj_property name="ElementShortName">classified_data_valid</obj_property>
+      <obj_property name="ObjectShortName">classified_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/classify_ram_data" type="array">
+      <obj_property name="ElementShortName">classify_ram_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">classify_ram_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/classified_data" type="array">
+      <obj_property name="ElementShortName">classified_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">classified_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/pooling1_in_addr" type="array">
+      <obj_property name="ElementShortName">pooling1_in_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pooling1_in_addr[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/pooling_ccnt" type="array">
+      <obj_property name="ElementShortName">pooling_ccnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pooling_ccnt[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/BN_step_r" type="array">
+      <obj_property name="ElementShortName">BN_step_r[1:0]</obj_property>
+      <obj_property name="ObjectShortName">BN_step_r[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/BN_step_r2" type="array">
+      <obj_property name="ElementShortName">BN_step_r2[1:0]</obj_property>
+      <obj_property name="ObjectShortName">BN_step_r2[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/BN_step" type="array">
+      <obj_property name="ElementShortName">BN_step[1:0]</obj_property>
+      <obj_property name="ObjectShortName">BN_step[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/classified_data_valid" type="logic">
+      <obj_property name="ElementShortName">classified_data_valid</obj_property>
+      <obj_property name="ObjectShortName">classified_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/classified_data_valid_r" type="logic">
+      <obj_property name="ElementShortName">classified_data_valid_r</obj_property>
+      <obj_property name="ObjectShortName">classified_data_valid_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/classified_data" type="array">
+      <obj_property name="ElementShortName">classified_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">classified_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/bn_in_data_cal" type="logic">
+      <obj_property name="ElementShortName">bn_in_data_cal</obj_property>
+      <obj_property name="ObjectShortName">bn_in_data_cal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/bn_data_valid" type="logic">
+      <obj_property name="ElementShortName">bn_data_valid</obj_property>
+      <obj_property name="ObjectShortName">bn_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/bn_data" type="array">
+      <obj_property name="ElementShortName">bn_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bn_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/batch_normalization_inst/u" type="array">
+      <obj_property name="ElementShortName">u[31:0]</obj_property>
+      <obj_property name="ObjectShortName">u[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/batch_normalization_inst/o2" type="array">
+      <obj_property name="ElementShortName">o2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/sigmoid_data_valid" type="logic">
+      <obj_property name="ElementShortName">sigmoid_data_valid</obj_property>
+      <obj_property name="ObjectShortName">sigmoid_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/sigmoid_data_valid_r" type="logic">
+      <obj_property name="ElementShortName">sigmoid_data_valid_r</obj_property>
+      <obj_property name="ObjectShortName">sigmoid_data_valid_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/sigmoid_data_valid_r2" type="logic">
+      <obj_property name="ElementShortName">sigmoid_data_valid_r2</obj_property>
+      <obj_property name="ObjectShortName">sigmoid_data_valid_r2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/sigmoid_data_valid_r3" type="logic">
+      <obj_property name="ElementShortName">sigmoid_data_valid_r3</obj_property>
+      <obj_property name="ObjectShortName">sigmoid_data_valid_r3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/sigmoid_data" type="array">
+      <obj_property name="ElementShortName">sigmoid_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sigmoid_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/sigmoid_data_r" type="array">
+      <obj_property name="ElementShortName">sigmoid_data_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sigmoid_data_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_addr" type="array">
+      <obj_property name="ElementShortName">fcnn_addr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnn_addr[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_mul" type="array">
+      <obj_property name="ElementShortName">fcnn_mul[9:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnn_mul[9:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_temp" type="array">
+      <obj_property name="ElementShortName">fcnn_temp[9:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnn_temp[9:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data" type="array">
+      <obj_property name="ElementShortName">fcnn_data[9:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnn_data[9:0][31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mnist_process_tb/mnist_process/fcnn_data[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/result_data" type="array">
+      <obj_property name="ElementShortName">result_data[319:0]</obj_property>
+      <obj_property name="ObjectShortName">result_data[319:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/maxdata" type="array">
+      <obj_property name="ElementShortName">maxdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">maxdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mnist_process_tb/mnist_process/number_o" type="array">
+      <obj_property name="ElementShortName">number_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">number_o[3:0]</obj_property>
+   </wvobject>
+</wave_config>

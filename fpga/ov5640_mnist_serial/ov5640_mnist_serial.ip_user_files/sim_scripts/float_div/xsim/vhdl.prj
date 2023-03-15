@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../ip/float_div/sim/float_div.vhd" \
+
+nosort

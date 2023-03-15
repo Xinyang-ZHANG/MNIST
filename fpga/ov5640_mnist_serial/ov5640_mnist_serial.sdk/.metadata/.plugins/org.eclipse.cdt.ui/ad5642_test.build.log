@@ -1,0 +1,10 @@
+23:50:16 **** Incremental Build of configuration Debug for project ad5642_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/i2c/PS_i2c.c
+Invoking: ARM v7 gcc compiler
+make: Interrupt/Exception caught (code = 0xc00000fd, addr = 0x4227d3)
+
+23:50:16 Build Finished (took 154ms)
+

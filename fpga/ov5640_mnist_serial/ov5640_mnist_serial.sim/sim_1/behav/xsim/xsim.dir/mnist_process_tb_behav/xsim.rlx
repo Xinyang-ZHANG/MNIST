@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3015726525305497351  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 45602b78837d44a688781dca0df8add6 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L xbip_utils_v3_0_8 -L axi_utils_v2_0_4 -L xbip_pipe_v3_0_4 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_dsp48_multadd_v3_0_4 -L xbip_bram18k_v3_0_4 -L mult_gen_v12_0_13 -L floating_point_v7_1_5 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot mnist_process_tb_behav xil_defaultlib.mnist_process_tb xil_defaultlib.glbl" , 
+    buildDate : "Dec 15 2017" , 
+    buildTime : "21:07:18" , 
+    linkCmd : "D:\\Vivado2017.4\\Vivado\\2017.4\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/mnist_process_tb_behav/xsimk.exe\"   \"xsim.dir/mnist_process_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/mnist_process_tb_behav/obj/xsim_1.win64.obj\" \"xsim.dir/mnist_process_tb_behav/obj/xsim_2.win64.obj\" \"xsim.dir/mnist_process_tb_behav/obj/xsim_3.win64.obj\" \"D:\\Vivado2017.4\\Vivado\\2017.4\\lib\\win64.o\\\\librdi_simulator_kernel.dll\" \"D:\\Vivado2017.4\\Vivado\\2017.4\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
