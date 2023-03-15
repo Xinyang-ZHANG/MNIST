@@ -1,2 +1,0 @@
-mnist_image_blkmem.v,verilog,xil_defaultlib,../../../ip/mnist_image_blkmem/sim/mnist_image_blkmem.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,2 +1,0 @@
-float_fix.vhd,vhdl,xil_defaultlib,../../../ip/float_fix/sim/float_fix.vhd,
-glbl.v,Verilog,xil_defaultlib,glbl.v
