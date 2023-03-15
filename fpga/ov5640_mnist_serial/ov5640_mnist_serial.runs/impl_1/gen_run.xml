@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1678462949">
+  <File Type="PWROPT-DCP" Name="system_wrapper_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="system_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="system_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="system_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="system_wrapper_reports.tcl"/>
+  <File Type="BG-DRC" Name="system_wrapper.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="system_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="system_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="system_wrapper.hwdef"/>
+  <File Type="OPT-DCP" Name="system_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="system_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="system_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="system_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="system_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="system_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="system_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="system_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="system_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="system_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="system_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="system_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="system_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="system_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="system_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="system_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="system_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="system_wrapper_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="system_wrapper.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="system_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="system_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="system_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="system_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="system_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="system_wrapper_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="system_wrapper.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="system_wrapper_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="system_wrapper.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="system_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="system_wrapper.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="system_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="system_wrapper.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="system_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="system_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="system_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="system_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="system_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="system_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="system_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="system_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="system_wrapper.vdi"/>
+  <File Type="ROUTE-CLK" Name="system_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="system_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="system_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="system_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="system_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="system_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="system_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="system_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="system_wrapper.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="system_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="system_wrapper.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../self_learning/Alinx/Alinx7010/AX7010_2017.4.1/course_s2_sdk/course_s2_sdk/21_ov5640_single/ov5640_single.srcs/sources_1/bd/system/system.bd"/>
+        <Attr Name="ImportTime" Val="1537594300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/ip/sigmoid_blkmem/sigmoid_blkmem.xci"/>
+        <Attr Name="ImportTime" Val="1676549156"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/mnist_image_blkmem/mnist_image_blkmem.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/ip/mnist_image_blkmem/mnist_image_blkmem.xci"/>
+        <Attr Name="ImportTime" Val="1672671276"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/alinx_ov5640.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_single/repo/alinx/ov5640_ip/src/alinx_ov5640.v"/>
+        <Attr Name="ImportTime" Val="1537153272"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/batch_normalization.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/new/batch_normalization.v"/>
+        <Attr Name="ImportTime" Val="1677232744"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/cmos_8_16bit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_single/repo/alinx/ov5640_ip/src/cmos_8_16bit.v"/>
+        <Attr Name="ImportTime" Val="1479451318"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/convlayer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/new/convlayer.v"/>
+        <Attr Name="ImportTime" Val="1673274040"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pooling/max2to1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/imports/pooling/max2to1.v"/>
+        <Attr Name="ImportTime" Val="1677217964"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pooling/max_pooling.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/imports/pooling/max_pooling.v"/>
+        <Attr Name="ImportTime" Val="1676028653"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pooling/max_pooling_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/imports/pooling/max_pooling_core.v"/>
+        <Attr Name="ImportTime" Val="1676215955"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mnist_256to1pix.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/new/mnist_256to1pix.v"/>
+        <Attr Name="ImportTime" Val="1673079261"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mnist_process.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/new/mnist_process.v"/>
+        <Attr Name="ImportTime" Val="1677232680"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/out_select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/new/out_select.v"/>
+        <Attr Name="ImportTime" Val="1676791425"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/out_select_cell.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/new/out_select_cell.v"/>
+        <Attr Name="ImportTime" Val="1676685210"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pooling/pooling_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/imports/pooling/pooling_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1676255061"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/red_block.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/new/red_block.v"/>
+        <Attr Name="ImportTime" Val="1676554629"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sigmoid.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/new/sigmoid.v"/>
+        <Attr Name="ImportTime" Val="1676549372"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/single_convcore.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/new/single_convcore.v"/>
+        <Attr Name="ImportTime" Val="1677217981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/system/hdl/system_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../self_learning/Alinx/Alinx7010/AX7010_2017.4.1/course_s2_sdk/course_s2_sdk/21_ov5640_single/ov5640_single.srcs/sources_1/bd/system/hdl/system_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1537594302"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pooling/max_pooling_1serial.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/imports/pooling/max_pooling_1serial.v"/>
+        <Attr Name="ImportTime" Val="1675474987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov5640_mnist/sigmoid.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/sigmoid.coe"/>
+        <Attr Name="ImportTime" Val="1673078570"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov5640_mnist/fcnn_W.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/fcnn_W.coe"/>
+        <Attr Name="ImportTime" Val="1673764816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fcnn_b.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/five.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/W1.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/W2.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/b1.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/b2.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/batch_normalization.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fcnn_W.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/sigmoid_blkmem.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/ip/sigmoid_blkmem.xcix"/>
+        <Attr Name="ImportTime" Val="1676549279"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/mnist_image_blkmem.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov5640_mnist/ov5640_mnist.srcs/sources_1/ip/mnist_image_blkmem.xcix"/>
+        <Attr Name="ImportTime" Val="1672671370"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov5640_mnist_serial/one.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/one.coe"/>
+        <Attr Name="ImportTime" Val="1678446003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/one.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="system_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/system.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../self_learning/Alinx/Alinx7010/AX7010_2017.4.1/course_s2_sdk/labs/08_vdma_test/vdma_test.srcs/constrs_1/new/system.xdc"/>
+        <Attr Name="ImportTime" Val="1479272875"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/hdmi_out.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../self_learning/Alinx/Alinx7010/AX7010_2017.4.1/course_s2_sdk/course_s2_sdk/21_ov5640_single/ov5640_single.srcs/constrs_1/new/hdmi_out.xdc"/>
+        <Attr Name="ImportTime" Val="1537442124"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/an5642.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../self_learning/Alinx/Alinx7010/AX7010_2017.4.1/course_s2_sdk/course_s2_sdk/21_ov5640_single/ov5640_single.srcs/constrs_1/new/an5642.xdc"/>
+        <Attr Name="ImportTime" Val="1537434832"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/system.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_processing_system7_0_150M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_dynclk_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="classify_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_processing_system7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="float_div"/>
+  <BlockFileSet Type="BlockSrcs" Name="fcnnb_blkmem"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_vdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_v_tc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pooling_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="rgb2dvi_hdmi"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axis_subset_converter_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fcnnW_blkmem"/>
+  <BlockFileSet Type="BlockSrcs" Name="W1_blkmem"/>
+  <BlockFileSet Type="BlockSrcs" Name="W2_blkmem"/>
+  <BlockFileSet Type="BlockSrcs" Name="b1_blkmem"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2_blkmem"/>
+  <BlockFileSet Type="BlockSrcs" Name="BN_blkmem"/>
+  <BlockFileSet Type="BlockSrcs" Name="conv_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="fcnnW_buffer"/>
+  <BlockFileSet Type="BlockSrcs" Name="input_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="layer1_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="conv2_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="float_fix"/>
+  <BlockFileSet Type="BlockSrcs" Name="fix_float"/>
+</GenRun>

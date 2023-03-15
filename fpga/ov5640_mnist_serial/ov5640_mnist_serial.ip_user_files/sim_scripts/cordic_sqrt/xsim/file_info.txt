@@ -1,0 +1,2 @@
+cordic_sqrt.vhd,vhdl,xil_defaultlib,../../../ip/cordic_sqrt/sim/cordic_sqrt.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

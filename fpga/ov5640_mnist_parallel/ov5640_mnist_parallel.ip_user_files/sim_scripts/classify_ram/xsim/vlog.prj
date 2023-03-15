@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../ip/classify_ram/sim/classify_ram.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar  9 11:00:37 2023
+# Process ID: 5780
+# Current directory: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/fcnnW_buffer_synth_1
+# Command line: vivado.exe -log fcnnW_buffer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fcnnW_buffer.tcl
+# Log file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/fcnnW_buffer_synth_1/fcnnW_buffer.vds
+# Journal file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/fcnnW_buffer_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fcnnW_buffer.tcl -notrace

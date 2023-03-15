@@ -1,0 +1,2 @@
+test_imgrom.v,verilog,xil_defaultlib,../../../ip/test_imgrom/sim/test_imgrom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

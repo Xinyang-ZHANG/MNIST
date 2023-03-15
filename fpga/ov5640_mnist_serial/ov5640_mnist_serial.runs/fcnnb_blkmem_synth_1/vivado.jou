@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar  8 23:56:59 2023
+# Process ID: 25724
+# Current directory: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/fcnnb_blkmem_synth_1
+# Command line: vivado.exe -log fcnnb_blkmem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fcnnb_blkmem.tcl
+# Log file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/fcnnb_blkmem_synth_1/fcnnb_blkmem.vds
+# Journal file: D:/Alinx/Alinx7010/Self_learning/ov5640_mnist_serial/ov5640_mnist_serial.runs/fcnnb_blkmem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fcnnb_blkmem.tcl -notrace

@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ov5640_mnist_parallel.ip_user_files/ip/float_fix/sim/float_fix.vhd" \
+"../../../../ov5640_mnist_parallel.ip_user_files/ip/float_div/sim/float_div.vhd" \
+"../../../../ov5640_mnist_parallel.ip_user_files/ip/fix_float/sim/fix_float.vhd" \
+
+# Do not sort compile order
+nosort
